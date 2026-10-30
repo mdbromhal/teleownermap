@@ -1,0 +1,7 @@
+row,owner,owner_type,owned,owned_type,graph,share_min,share_max,status,disclosed,start,end,source,note
+1b,China Mobile International (UK) Limited,company,China Mobile International (USA) Inc.,company,none,,,stated,yes,2015-01,,"S1 p. 52, fn. 270",immediate parent; share not stated; not walked because row 2's indirect 100% already covers this share and the intermediates are a gap
+1b,China Mobile Communications Corporation,company,China Mobile International (UK) Limited,company,control,,,stated,yes,2015-01,,"S1 p. 52, fn. 270",majority controlled
+2,China Mobile Limited,company,China Mobile International (USA) Inc.,company,equity,1,1,stated,yes,,,S1 p. 52 + diagram,wholly owned (indirect); intermediates are a gap (row 5)
+3,China Mobile Communications Corporation,company,China Mobile Limited,company,equity,0.70,1,stated,yes,2011,,S1 p. 52,more than 70 percent
+3,China Mobile Communications Corporation,company,China Mobile Limited,company,equity,0.73,0.73,stated,yes,,,S1 diagram,diagram value (indirect)
+4,PRC government,government,China Mobile Communications Corporation,company,equity,1,1,stated,yes,,,S1 p. 52,direct 100 percent

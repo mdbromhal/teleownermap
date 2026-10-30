@@ -1,0 +1,5 @@
+row,owner,owner_type,owned,owned_type,graph,share_min,share_max,status,disclosed,start,end,source,note
+1,China Unicom Global Limited,company,China Unicom (Americas) Operations Ltd.,company,equity,1,1,stated,yes,,,S1 p. 78,wholly owned (described 2017–2020)
+2,China Unicom (Hong Kong) Limited,company,China Unicom Global Limited,company,equity,1,1,stated,yes,,,S1 p. 78,wholly owned
+3,China United Network Communications Group Co. Ltd.,company,China Unicom (Hong Kong) Limited,company,equity,0.521,0.521,stated,yes,,,S1 p. 78,approximately; through multiple unnamed intervening holding companies (row 5 gap)
+4,SASAC,government,China United Network Communications Group Co. Ltd.,company,equity,0.98,0.98,stated,yes,,,S1 p. 77,approximately

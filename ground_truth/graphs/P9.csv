@@ -1,0 +1,7 @@
+row,owner,owner_type,owned,owned_type,graph,share_min,share_max,status,disclosed,start,end,source,note
+0,CM Telecom International Limited,company,ComNet (USA) LLC,company,equity,,,stated,yes,1999-07,2009,S1 p. 84,subsidiary (then CM Tel (USA) LLC); share not stated
+1,Pacific Networks Corp.,company,ComNet (USA) LLC,company,equity,1,1,stated,yes,2009,,S1 p. 85,wholly owned
+2,CITIC Telecom International Holdings Ltd,company,Pacific Networks Corp.,company,equity,1,1,stated,yes,2008,,"S1 p. 85, fn. 531; diagram p. 95",indirectly wholly owned (formerly CITIC 1616 Holdings); intermediates not modeled
+3,CITIC Limited,company,CITIC Telecom International Holdings Ltd,company,equity,0.58,0.58,stated,yes,,,S1 diagram p. 95,approx.; indirect
+4,CITIC Group Corp.,company,CITIC Limited,company,equity,0.58,0.58,stated,yes,,,S1 diagram p. 95,approx.; S1 p. 94 text says CITIC Telecom is majority-owned by CITIC Group (defined-term ambiguity); text not modeled as a separate link
+5,PRC government,government,CITIC Group Corp.,company,equity,1,1,stated,yes,,,S1 p. 94,wholly state-owned

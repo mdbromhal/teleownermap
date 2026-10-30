@@ -1,0 +1,11 @@
+docs/774\ project.pdf
+docs/Mapping_Telecom_Ownership_Using_Tor_Anonymity_Analysis_Techniques\ NO\ AUTHOR.pdf
+ground_truth/sources/
+docs/proposed_future_methodology.md
+data/
+.venv/
+__pycache__/
+*.duckdb
+*.duckdb.wal
+.pytest_cache/
+.ruff_cache/

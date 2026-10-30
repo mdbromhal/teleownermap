@@ -1,0 +1,12 @@
+row,owner,owner_type,owned,owned_type,graph,share_min,share_max,status,disclosed,start,end,source,note
+1a,DISH Network Corp.,company,"Northstar Wireless, LLC",company,equity,0.85,0.85,stated,yes,2014,,J1 slip op. p. 8,indirect through wholly owned subsidiaries (J2 p. 8); intermediates not modeled
+1b,DISH Network Corp.,company,"SNR Wireless LicenseCo, LLC",company,equity,0.85,0.85,stated,yes,2014,,J1 slip op. p. 8,indirect through wholly owned subsidiaries (J2 p. 8); intermediates not modeled
+2a,DISH Network Corp.,company,"Northstar Wireless, LLC",company,equity,0.85,0.85,stated,yes,2014,,J2 p. 8,second source for 1a
+2b,DISH Network Corp.,company,"SNR Wireless LicenseCo, LLC",company,equity,0.85,0.85,stated,yes,2014,,J2 p. 8,second source for 1b
+3a,"Northstar Manager, LLC",company,"Northstar Spectrum, LLC",company,equity,,,stated,yes,2018-06-07,,"J2 n.8, pp. 17–18",party to LLC agreement; share not stated
+3b,American AWS-3 Wireless II L.L.C.,company,"Northstar Spectrum, LLC",company,equity,,,stated,yes,2018-06-07,,"J2 n.8, pp. 17–18",party to LLC agreement; share not stated
+4a,"SNR Wireless HoldCo, LLC",company,"SNR Wireless LicenseCo, LLC",company,none,,,stated,yes,2014-10-13,,"J2 n.12, p. 26",guarantor in credit agreement (not equity)
+4b,American AWS-3 Wireless III L.L.C.,company,"SNR Wireless LicenseCo, LLC",company,none,,,stated,yes,2014-10-13,,"J2 n.12, p. 26",lender in credit agreement (not equity)
+5a,DISH Network Corp.,company,"Northstar Wireless, LLC",company,control,,,found,no,2015,,J1 pp. 18–19,de facto control via financing (~98% of winning bids); FCC finding (15-104 not opened) upheld in J1
+5b,DISH Network Corp.,company,"SNR Wireless LicenseCo, LLC",company,control,,,found,no,2015,,J1 pp. 18–19,de facto control via financing (~98% of winning bids); FCC finding (15-104 not opened) upheld in J1
+6,DISH Network Corp.,company,"Northstar Wireless, LLC",company,equity,0.97,0.97,stated,yes,2020,,J2 p. 17,all but 3% of common shares

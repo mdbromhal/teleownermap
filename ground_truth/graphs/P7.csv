@@ -1,0 +1,5 @@
+row,owner,owner_type,owned,owned_type,graph,share_min,share_max,status,disclosed,start,end,source,note
+1,China Telecom Corporation Limited,company,China Telecom (Americas) Corp.,company,equity,1,1,stated,yes,2007,,S1 pp. 57–58; diagram p. 72,full equity interest
+1-pre,China Telecommunications Corp.,company,China Telecom (Americas) Corp.,company,equity,1,1,stated,yes,2001,2007,S1 p. 57,before the 2007 restructuring
+2,China Telecommunications Corp.,company,China Telecom Corporation Limited,company,equity,0.7089,0.7089,stated,yes,,,S1 diagram p. 72,~2020; S1 fn. 423 cites Executive Branch Recommendation re CTA at 33 (not opened)
+3,SASAC,government,China Telecommunications Corp.,company,control,,,stated,yes,,,S1 p. 71,ultimately owned and controlled; SASAC's equity share not stated

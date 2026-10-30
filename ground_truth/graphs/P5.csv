@@ -1,0 +1,26 @@
+row,owner,owner_type,owned,owned_type,graph,share_min,share_max,status,disclosed,start,end,source,note
+1+2,Lynch PCS B,company,New England Wireless,company,equity,0.499,0.499,stated,yes,,,V1 Background,indirect owner
+1+3,NEWC,company,New England Wireless,company,equity,0.501,0.501,stated,yes,,,V1 Background,direct owner
+1+2,Lynch PCS C,company,High Country,company,equity,0.499,0.499,stated,yes,,,V1 Background,indirect owner
+1+3,HCCC,company,High Country,company,equity,0.501,0.501,stated,yes,,,V1 Background,direct owner
+1+2,Lynch PCS D,company,Southeast Wireless,company,equity,0.499,0.499,stated,yes,,,V1 Background,indirect owner
+1+3,SWCC,company,Southeast Wireless,company,equity,0.501,0.501,stated,yes,,,V1 Background,direct owner
+1+2,Lynch PCS E,company,Fortunet Wireless,company,equity,0.499,0.499,stated,yes,,,V1 Background,indirect owner
+1+3,FWCC,company,Fortunet Wireless,company,equity,0.501,0.501,stated,yes,,,V1 Background,direct owner
+1+2,Theta II,company,Theta,company,equity,0.499,0.499,stated,yes,,,V1 Background,indirect owner
+1+3,Theta I,company,Theta,company,equity,0.501,0.501,stated,yes,,,V1 Background,direct owner
+4,Gabelli and Gabelli-related entities,unclassified,New England Wireless,company,control,,,alleged,no,,,V1 Background,alleged creator of sham bidder
+4,Gabelli and Gabelli-related entities,unclassified,NEWC,company,control,,,alleged,no,,,V1 Background,alleged creator of direct owner
+4,Gabelli and Gabelli-related entities,unclassified,Lynch PCS B,company,control,,,alleged,no,,,V1 Background,alleged creator of indirect owner
+4,Gabelli and Gabelli-related entities,unclassified,High Country,company,control,,,alleged,no,,,V1 Background,alleged creator of sham bidder
+4,Gabelli and Gabelli-related entities,unclassified,HCCC,company,control,,,alleged,no,,,V1 Background,alleged creator of direct owner
+4,Gabelli and Gabelli-related entities,unclassified,Lynch PCS C,company,control,,,alleged,no,,,V1 Background,alleged creator of indirect owner
+4,Gabelli and Gabelli-related entities,unclassified,Southeast Wireless,company,control,,,alleged,no,,,V1 Background,alleged creator of sham bidder
+4,Gabelli and Gabelli-related entities,unclassified,SWCC,company,control,,,alleged,no,,,V1 Background,alleged creator of direct owner
+4,Gabelli and Gabelli-related entities,unclassified,Lynch PCS D,company,control,,,alleged,no,,,V1 Background,alleged creator of indirect owner
+4,Gabelli and Gabelli-related entities,unclassified,Fortunet Wireless,company,control,,,alleged,no,,,V1 Background,alleged creator of sham bidder
+4,Gabelli and Gabelli-related entities,unclassified,FWCC,company,control,,,alleged,no,,,V1 Background,alleged creator of direct owner
+4,Gabelli and Gabelli-related entities,unclassified,Lynch PCS E,company,control,,,alleged,no,,,V1 Background,alleged creator of indirect owner
+4,Gabelli and Gabelli-related entities,unclassified,Theta,company,control,,,alleged,no,,,V1 Background,alleged creator of sham bidder
+4,Gabelli and Gabelli-related entities,unclassified,Theta I,company,control,,,alleged,no,,,V1 Background,alleged creator of direct owner
+4,Gabelli and Gabelli-related entities,unclassified,Theta II,company,control,,,alleged,no,,,V1 Background,alleged creator of indirect owner

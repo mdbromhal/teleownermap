@@ -1,0 +1,14 @@
+row,owner,owner_type,owned,owned_type,graph,share_min,share_max,status,disclosed,start,end,source,note
+1,S/RJW Partnership Ltd.,company,"Maritime Communications/Land Mobile, LLC",company,equity,1,1,stated,yes,2005,,"F1 p. 30161, ¶ 37",100% of membership interests
+2,"Communications Investments, Inc.",company,S/RJW Partnership Ltd.,company,control,,,stated,yes,2005,,"F1 p. 30161, ¶ 37",general partner
+3,Sandra M. DePriest,person,"Communications Investments, Inc.",company,equity,1,1,stated,yes,2005,,"F1 p. 30161, ¶ 37",
+4,Sandra M. DePriest,person,S/RJW Partnership Ltd.,company,equity,1,1,stated,yes,2005,,"F1 p. 30161, ¶ 37",100% of partnership shares
+5,Donald R. DePriest,person,"Maritime Communications/Land Mobile, LLC",company,control,,,alleged,no,2005,,"F1 p. 30155, ¶ 4",real party in interest / de facto control
+6,Donald R. DePriest,person,Sandra M. DePriest,person,none,,,alleged,no,2005,,"F1 p. 30155, ¶ 11",spouse not listed as a disclosable interest holder; no spouse link type yet so not walked
+7a,"MCT Investors, LP",company,"MariTEL, Inc.",company,equity,0.261,0.261,stated,yes,2001-03-13,,"F1 p. 30157–58, n.35",26.1% of all stock (MariTEL Form 602)
+7b,"MCT Investors, LP",company,"MariTEL, Inc.",company,control,,,stated,yes,2001-03-13,,"F1 p. 30157–58, n.35",58.3% of voting stock (MariTEL Form 602)
+8,MedCom Development Corp.,company,"MCT Investors, LP",company,control,,,stated,yes,2001-03-13,,"F1 p. 30158, n.35",sole general partner (MariTEL Form 602)
+9,Donald R. DePriest,person,MedCom Development Corp.,company,equity,1,1,stated,yes,2001-03-13,,"F1 p. 30158, n.35",sole shareholder (MariTEL Form 602)
+10a,Donald R. DePriest,person,Charisma Broadcasting Co.,company,control,,,alleged,no,,,"F1 p. 30155, ¶ 5",undisclosed affiliate (disclosed late)
+10b,Donald R. DePriest,person,"Bravo Communications, Inc.",company,control,,,alleged,no,,,"F1 p. 30155, ¶ 5",undisclosed affiliate (disclosed late)
+10c,Donald R. DePriest,person,"Golden Triangle Radio, Inc.",company,control,,,alleged,no,,,"F1 p. 30155, ¶ 5",undisclosed affiliate (disclosed late)

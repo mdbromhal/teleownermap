@@ -145,6 +145,16 @@ Dated events for timing analysis.
 | date, precision | Date and precision |
 | record_id | Source record |
 
+### `exhibit_files`
+Form 602/175 exhibit PDFs the user downloaded from ULS and imported (FCC blocks automated download). Each PDF is a `sources` row (`fcc_exhibit`); each page's extracted text is a `records` row (locator `page N`). Exhibit text is shown in full but excluded from exports by default, since free text can hold home addresses.
+
+| Column | Meaning |
+|---|---|
+| exhibit_record_id | The attachment record (T) in the ownership file that lists this exhibit |
+| source_id | The imported PDF |
+| pages, pages_without_text | Page count, and pages with no text layer (likely scans; not OCR'd) |
+| imported_at | When the user imported it |
+
 ## GLEIF staging
 The whole GLEIF golden copy, one row per CSV row, so any company is searchable. Only companies connected to an FCC entity (a possible match plus its full parent chain) are promoted into `entities`, `relationships` and `attributes`.
 

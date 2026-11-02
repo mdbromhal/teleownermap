@@ -1,4 +1,4 @@
-name: Lint
+name: Lint and test
 
 on:
   push:
@@ -15,3 +15,17 @@ jobs:
       - run: pip install "ruff>=0.6"
       - run: ruff check .
       - run: ruff format --check .
+
+  pytest:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        # Oldest supported version and the one used for development.
+        python-version: ["3.11", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - run: pip install -e ".[dev]"
+      - run: pytest -q

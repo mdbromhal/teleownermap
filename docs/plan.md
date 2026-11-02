@@ -1,6 +1,6 @@
 # Plan
 
-Deadline: paper + current tool state, first week of December 2026. Quality over speed; the web app may slip past the deadline. Decisions live in `decisions.md`; work done lives in `methodology.md`.
+Deadlines: full paper draft due **Dec 1, 2026**; final paper (plus current tool state) due **Dec 7, 2026 at 17:00**. Quality over speed. Decisions live in `decisions.md`; work done lives in `methodology.md`.
 
 ## Week 1 — Oct 12–18: Ground truth + data model
 - [x] Ground-truth research draft (AI-assisted) → `ground_truth/cases.md`
@@ -39,19 +39,28 @@ Deadline: paper + current tool state, first week of December 2026. Quality over 
 - [x] Negative-control answer key stored as CSV
 - [x] User reviewed `docs/data_model.md`
 - [ ] Week 6: decide how to score case reconstruction given that FCC's bulk ownership file keeps only each filer's current filing (no 2001–2022 history); state it in Limitations
-- [ ] Retry FCC bulk download through the tool (refused on 2026-10-29); if still refused, user decides on curl, else build guided manual download + import
-- [ ] Optional: add a test job to the GitHub Actions workflow (currently lint only)
+- [x] Retry FCC bulk download through the tool: still refused 2026-10-30; switched FCC downloads to curl (works)
+- [x] Optional: add a test job to the GitHub Actions workflow
 - [ ] Optional: open FCC 15-104 ¶¶ 14–17 to fill P4 row 7 (and get an FCC "found" de facto control label)
 
-## Weeks 3–4 — Oct 26–Nov 8: FCC + GLEIF ingestion
+## Weeks 3–4 — Oct 26–Nov 2: FCC + GLEIF ingestion (finished a week early)
 - [x] FCC ULS download + parser (licensees, FRNs, dates; plus a_aatc transfers, sites, history)
 - [x] Form 602 ownership disclosures parser (plus Form 175)
-- [ ] Link each company's multiple FRNs with evidence ("possibly same"); records sharing one FRN are one entity
-- [~] GLEIF bulk data + parent-relationship records (staging + promote built; full staging run unverified)
+- [x] GLEIF bulk data + parent-relationship records (staging + promote built; full staging verified 2026-11-02)
+- [x] Rerun full GLEIF staging; record time, memory, disk; add `gleif` to the ingest command
+- [x] Guided exhibit import: list exhibits read/unread with download steps, "add" a user-downloaded file, extract text with PyMuPDF
 - [x] Source/evidence recorded for every ingested value; filing vs effective dates
-- [ ] Timing events extracted (ULS application/grant, transfer of control, Form 602 filings, LEI registration/creation; check whether FRN registration date is public); evidence-only display of percentile gaps vs user-chosen comparison groups, linked pairs first, with group-size warnings
+- [x] Timing events extracted (ULS application/grant, transfer of control and consent/consummation, Form 602 filings, LEI registration/creation)
+- [x] Check whether FRN registration dates are public in bulk (not published; excluded)
+- [x] Timing percentile scoring as a library function (pair timing and lead time vs user-chosen comparison groups, with group size); display waits for week 5 links
+- [x] Update `docs/architecture.md` for ULS and GLEIF ingestion
+- [x] Optional: run tests in GitHub Actions
 
-## Week 5 — Nov 9–15: Entity matching
+## Week 5 — Nov 2–8: Entity matching
+- [ ] User: download the P3/P4 exhibits by hand and import them (`python -m teleownermap.exhibits`)
+- [ ] Timing evidence display for linked pairs (needs week-5 links)
+- [ ] Promote GLEIF companies matched to FCC entities (`gleif.promote`)
+- [ ] Link each company's multiple FRNs with evidence ("possibly same"); records sharing one FRN are one entity (moved from weeks 3–4)
 - [ ] Splink model across FCC, Form 602, GLEIF records
 - [ ] Transliteration-aware name comparison; name-frequency weighting
 - [ ] "Possibly same" links with evidence for and against; ranked candidates; never auto-chained
@@ -59,24 +68,30 @@ Deadline: paper + current tool state, first week of December 2026. Quality over 
 - [ ] Hand-label a sample of match pairs; measure match accuracy
 - [ ] Metrics with and without unverified top matches
 
-## Week 6 — Nov 16–22: Evaluation
+## Week 6 — Nov 9–15: Evaluation
 - [ ] Case-study reconstruction (owner-revealing documents hidden), held-out cases last
 - [ ] Planted structures in a separate, clearly marked data copy
 - [ ] Negative controls (large + small legitimate carriers)
 - [ ] Results tables and figures for the paper
 
-## Week 7 — Nov 23–29: Paper + library (Thanksgiving Nov 26)
-- [ ] Write Methods (from `methodology.md`) and Results
-- [ ] Limitations and AI-use disclosure
+## Week 7 — Nov 16–22: Web app + user-friendly deliverables
 - [ ] Tidy Python library API: search by licensee/FRN and by person
+- [ ] Web app (Cytoscape.js graph view): search, owner probabilities, evidence trail, "possible match, unverified" labels, toggle for unverified matches
+- [ ] Docker one-command setup
+- [ ] Step-by-step `SETUP.md` for non-technical users (8 GB RAM, ~20 GB disk)
 - [ ] Draft `ASSUMPTIONS.md` from `decisions.md`
 
-## Final — Dec 1–4: Polish + submit
+## Week 8 — Nov 23–29: Paper (Thanksgiving Nov 26)
+- [ ] Update Methods (from `methodology.md`) and write Results (user has been writing throughout)
+- [ ] Limitations and AI-use disclosure
+
+## Buffer + submission — Nov 30–Dec 7 (draft due Dec 1; final due Dec 7, 17:00)
+- [ ] Spare week for anything that slipped
+- [ ] Submit full draft (Dec 1)
 - [ ] Revise paper; fix slide/paper inconsistencies ($113M vs $133M, "Afron", "O'Conner", "et. al.", Feamster attribution)
-- [ ] Submit
+- [ ] Submit final paper (Dec 7, 17:00)
 
 ## Stretch / after deadline
-- [ ] Minimal web viewer (if ahead), then full web app (Cytoscape.js), Docker one-command setup, step-by-step `SETUP.md` for laypeople
 - [ ] Audit-trail export of user match confirmations
 - [ ] Change-over-time analysis: metrics across a case's history (e.g. P7 before/after 2007, P9's 2008 CITIC transfer) instead of one snapshot date
 - [ ] OpenCorporates, state registries, ICIJ, national registries

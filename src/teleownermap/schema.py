@@ -160,6 +160,18 @@ CREATE TABLE IF NOT EXISTS events (
     CHECK ((entity_id IS NULL) <> (license_id IS NULL))
 );
 
+-- Exhibit PDFs the user downloaded and imported, tied to the Form 602/175 attachment
+-- record (T) that lists them. Each page's extracted text is a `records` row of the PDF's
+-- source. Exhibit text is shown in full but left out of exports by default.
+CREATE TABLE IF NOT EXISTS exhibit_files (
+    exhibit_record_id  VARCHAR NOT NULL REFERENCES records (record_id),
+    source_id          VARCHAR NOT NULL REFERENCES sources (source_id),
+    pages              INTEGER NOT NULL,
+    pages_without_text INTEGER NOT NULL,
+    imported_at        TIMESTAMP NOT NULL,
+    PRIMARY KEY (exhibit_record_id, source_id)
+);
+
 -- GLEIF staging: the whole golden copy, one row per CSV row, searchable. Only companies
 -- connected to an FCC entity are promoted into the statement tables (docs/decisions.md).
 -- A sole proprietor's street, city and postal code are kept only as keyed hashes.

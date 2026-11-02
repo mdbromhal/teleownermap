@@ -150,3 +150,8 @@
 - Map GLEIF entity categories to entity types: GENERAL → company; FUND → company labeled fund; BRANCH → company labeled branch; SOLE_PROPRIETOR → person; RESIDENT_GOVERNMENT_ENTITY and INTERNATIONAL_ORGANIZATION → government.
 - Hash sole proprietors' GLEIF street, city and postal code like any person's address, including in the raw GLEIF staging tables, so the database never holds a person's plain address.
 - Keep a subset of GLEIF's 338 LEI columns in staging (identifier, names, legal and headquarters addresses, jurisdiction, category, legal form, statuses, key dates, managing LOU, successor LEIs, legal-entity events), leaving the original zip untouched, and revisit the choice in week 5.
+- Move linking a company's multiple FRNs into week 5, because it is entity matching and Splink would replace any separate rule written now.
+- Schedule the web app, Docker setup, setup guide, library API and ASSUMPTIONS.md in week 7, and keep week 8 for writing and submitting the paper, because the full draft is due Dec 1 and the final paper Dec 7 at 17:00.
+- Flag a timing comparison group as small when it has fewer than 30 entities (a rule of thumb, stated in ASSUMPTIONS.md), counting entities rather than comparisons for both pair timing and lead time, and always show both counts (e.g. "9 bidders, 35 pairs"), because pairs grow much faster than entities and aren't independent observations.
+- Keep paper writing in week 8, because the user has been writing throughout and only Methods updates and Results remain.
+- Move the schedule one week earlier (week 5 starts Nov 2, the paper week becomes Nov 23–29) and keep Nov 30–Dec 7 as a buffer around the Dec 1 draft and Dec 7 final, because ingestion finished a week early and a spare week protects against slips.
